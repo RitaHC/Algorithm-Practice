@@ -26,12 +26,10 @@ func beautifulNumber(x int) int {
 	}
 	// check how many 1's and how many 0's
 	// return which ever number is lower or dependeing upon the condition
-	if ones > zeros {
+	if ones > zeros || zeros == ones {
 		return zeros
 	} else if zeros > ones {
 		return ones
-	} else if zeros == ones {
-		return zeros
 	} else {
 		return 0
 	}
@@ -43,7 +41,7 @@ func main() {
 	x := 111100
 	fmt.Println("To beautify change the following number of digits: ", beautifulNumber(x))
 	fmt.Println("---------")
-	a := 1001
+	a := 10001
 	fmt.Println("To beautify change the following number of digits: ", beautifulNumber(a))
 	fmt.Println("---------")
 	b := 10
@@ -54,5 +52,8 @@ func main() {
 	fmt.Println("---------")
 	d := 0000
 	fmt.Println("To beautify change the following number of digits: ", beautifulNumber(d))
+	fmt.Println("---------")
+	e := 1100
+	fmt.Println("To beautify change the following number of digits: ", beautifulNumber(e))
 
 }
