@@ -25,7 +25,7 @@ func calculateOccurance(x int) (int, int) {
 	// return the value's
 
 	fmt.Println("1's :", y)
-	fmt.Println("1's :", z)
+	fmt.Println("0's :", z)
 	return y, z
 }
 
@@ -40,5 +40,4 @@ func main() {
 	calculateOccurance(b)
 	fmt.Println("--------")
 	calculateOccurance(c)
-
 }
