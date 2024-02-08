@@ -32,8 +32,6 @@ func beautifulNumber(x int) int {
 		return ones
 	} else if zeros == ones {
 		return zeros
-	} else if zeros == 0 || ones == 0 {
-		return 0
 	} else {
 		return 0
 	}
