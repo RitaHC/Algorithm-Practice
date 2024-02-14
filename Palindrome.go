@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// QUESTION ! - return if the string is a palindrome or not
+// QUESTION 1 - return if the string is a palindrome or not
 func palindromeString(str string) bool {
 	// make the string into all lower case
 	strLower := strings.ToLower(str)
