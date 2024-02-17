@@ -1,4 +1,4 @@
-package palindrome
+package main
 
 import (
 	"fmt"
@@ -52,12 +52,12 @@ func palindroneSlice(words []string) []string {
 	return palindromeSlice
 }
 
-// func main() {
-// 	fmt.Println("------ Palindrome STRING -------")
-// 	palindromeString("Hello")
-// 	palindromeString("Samas")
-// 	fmt.Println("------ Palindrome SLICE -------")
-// 	words := []string{"abc", "car", "ada", "racecar", "cool"}
-// 	fmt.Println(palindroneSlice(words))
+func main() {
+	fmt.Println("------ Palindrome STRING -------")
+	palindromeString("Hello")
+	palindromeString("Samas")
+	fmt.Println("------ Palindrome SLICE -------")
+	words := []string{"abc", "car", "ada", "racecar", "cool"}
+	fmt.Println(palindroneSlice(words))
 
-// }
+}
